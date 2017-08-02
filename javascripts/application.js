@@ -3,6 +3,12 @@ $(document).ready(function() {
 // Language choice
 	var language = "" ;
 
+	function trackFormSteps(e) {
+		console.log(e.target)
+		var event = new CustomEvent("step");
+
+		document.dispatchEvent(event);
+	}
   mixpanel.track("onload", {
 		"loader": "done"
   });
