@@ -3,10 +3,6 @@ $(document).ready(function() {
 // Language choice
 	var language = "" ;
 
-	mixpanel.track("page2");
-	mixpanel.track("page3");
-	mixpanel.track("page4");
-
 	// si on clic sur un drapeau, on récupère la langue
 	$('#french').on('click' , function () {
 		language = "French";

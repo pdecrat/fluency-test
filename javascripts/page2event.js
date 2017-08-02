@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  var event = new CustomEvent("page2");
+  mixpanel.track("page2");
 
-  document.dispatchEvent(event);
 })
