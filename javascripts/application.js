@@ -1845,6 +1845,7 @@ $(document).ready(function() {
 		var emailBody = `Hey ${friendName},%0D%0AI’ll reach fluency in ${language} in 2 months !%0D%0ADo you think you can be quicker?%0D%0AFind out for yourself with this quick test: www.how-long-to-become-fluent.com%0D%0AGood luck!!%0D%0Axxx`;
 		$('#mailto').prop('href' ,`mailto:${friendEmail}?subject=I will be fluent in ${language} in 2 months&body=${emailBody}`);
 		$('#mailto').html('Send')
+		mixpanel.track('mailSent');
 		console.log(emailBody);
 	})
 
