@@ -95,7 +95,7 @@ $(document).ready(function() {
 	});
 
 	$('#japonese').on('click' , function () {
-		language = "Japonese";
+		language = "Japanese";
 		$('#french').removeClass('languechoisie');
 		$('#english').removeClass('languechoisie');
 		$('#spanish').removeClass('languechoisie');
@@ -1539,6 +1539,7 @@ $(document).ready(function() {
 
 
 // resultats
+	var message;
 	$('#result').on('click' , function () {
 		var step = (readingGoal+writingGoal+speakingGoal+listeningGoal)-(readingLevel+writingLevel+speakingLevel+listeningLevel);
 		console.log("step" + step)
@@ -1565,7 +1566,7 @@ $(document).ready(function() {
 		console.log('nombre annee' + nombreAnnee)
 
 
-		var message = jours[date.getDay()] + " ";   // nom du jour
+		message = jours[date.getDay()] + " ";   // nom du jour
      	message += date.getDate() + "th ";   // numero du jour
      	message += mois[date.getMonth() + moisRestant] + " ";   // mois
      	message += date.getFullYear() + nombreAnnee;
@@ -1830,6 +1831,9 @@ $(document).ready(function() {
 		var elt2 = document.getElementById('friend-email');
 		var friendEmail = elt2.innerText || elt2.textContent;
 		console.log(friendEmail);
+		console.log(language);
+		console.log(message);
+		var emailBody = 'I’ll reach fluency in Spanish on Monday 30th September 2017!%0D%0ADo you think you can be quicker?%0D%0AFind out for yourself with this quick test: www.how-long-to-become-fluent.com%0D%0AGood luck!!%0D%0Axxx';
 	})
 
 	$('#OK2').on('click' , function () {
