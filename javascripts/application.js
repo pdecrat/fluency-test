@@ -1837,12 +1837,12 @@ $(document).ready(function() {
 		var elt1 = document.getElementById('friend-name');
 		var friendName = elt1.innerText || elt1.textContent;
 		console.log(friendName);
-		$('#hey').html("Hey "+friendName+",");
 		var elt2 = document.getElementById('friend-email');
 		var friendEmail = elt2.innerText || elt2.textContent;
 		console.log(friendEmail);
  		console.log(sessionStorage.getItem("language"));
 		var emailBody = `I’ll reach fluency in ${sessionStorage.getItem('language')} on ${sessionStorage.getItem('message')}!%0D%0ADo you think you can be quicker?%0D%0AFind out for yourself with this quick test: www.how-long-to-become-fluent.com%0D%0AGood luck!!%0D%0Axxx`;
+		$('#hey').html("Hey "+friendName+",%0D%0A" + emailBody);
 		console.log(emailBody);
 	})
 
