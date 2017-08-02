@@ -2,13 +2,10 @@ $(document).ready(function() {
 
 // Language choice
 	var language = "" ;
+	document.addEventListener('click', function() {
+		console.log(this);
+	})
 
-	function trackFormSteps(e) {
-		console.log(e.target)
-		var event = new CustomEvent("step");
-
-		document.dispatchEvent(event);
-	}
   mixpanel.track("onload", {
 		"loader": "done"
   });
