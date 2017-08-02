@@ -1834,6 +1834,7 @@ $(document).ready(function() {
 		console.log(language);
 		console.log(message);
 		var emailBody = 'I’ll reach fluency in Spanish on Monday 30th September 2017!%0D%0ADo you think you can be quicker?%0D%0AFind out for yourself with this quick test: www.how-long-to-become-fluent.com%0D%0AGood luck!!%0D%0Axxx';
+		console.log(emailBody);
 	})
 
 	$('#OK2').on('click' , function () {
